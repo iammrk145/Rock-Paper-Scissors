@@ -107,5 +107,5 @@ if (humanScore > computerScore){
     console.log("oh no! You lost the game😭💀");
 } else{
 
-    console.log("hehe tie is not possible");
+    console.log("omg its tie 🤣😭");
 }
