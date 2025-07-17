@@ -36,7 +36,7 @@ function getHumanChoice(){
 
         console.log(null);
     } else {
-        
+
         getHumanChoice()
     }
 
@@ -98,3 +98,14 @@ for (let i=0; i<5; i++){
     playRound(humanSelection, computerSelection);
 }
 
+if (humanScore > computerScore){
+
+    console.log("You have won the game🎉😎");
+
+} else if (humanScore < computerScore){
+
+    console.log("oh no! You lost the game😭💀");
+} else{
+
+    console.log("hehe tie is not possible");
+}
