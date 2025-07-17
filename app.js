@@ -1,6 +1,6 @@
 function getComputerChoice(){
 
-    let computerSelect = Math.random();
+    let computerSelect = Math.random();  // math.random() generate a random number betweeen 0 to 1
 
     if (computerSelect <= 0.3333){
 
@@ -40,3 +40,48 @@ function getHumanChoice(){
 }
 
 console.log(getHumanChoice());
+
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice){
+
+     if (humanChoice === "Rock" && computerChoice === "Scissors"){
+
+        result = "Congrats You won!";
+        humanScore += 1;
+
+    } else if (humanChoice === "Paper" && computerChoice === "Rock"){
+
+        result = "Congrats You won!";
+        humanScore += 1;
+
+    } else if (humanChoice === "Scissors" && computerChoice === "Paper"){
+
+        result = "Congrats You won!";
+        humanScore += 1;
+
+    } else if (humanChoice === "Rock" && computerChoice === "Paper"){
+
+        result = "oh no! You lost";
+        computerScore += 1;
+
+    } else if (humanChoice === "Paper" && computerChoice === "Scissors"){
+
+        result = "oh no! You lost";
+        computerScore += 1;
+
+    } else if (humanChoice === "Scissors" && computerChoice === "Rock"){
+
+        result = "oh no! You lost";
+        computerScore += 1;
+
+    } else {
+        result = "its a tie!"
+    }
+
+    console.log(result);
+    console.log("Your Score: " + humanScore + ", Computer Score: " + computerScore);
+    return result;
+}
