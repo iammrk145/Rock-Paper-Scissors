@@ -16,7 +16,7 @@ function getComputerChoice(){
     }
 }
 
-console.log(getComputerChoice());
+
 
 
 function getHumanChoice(){
@@ -32,14 +32,18 @@ function getHumanChoice(){
     } else if (humanSelect.toLowerCase() === "scissors"){
 
         humanSelect = 'Scissors';
-    } else {
+    } else if(humanScore.toLowerCase === null){
+
         console.log(null);
+    } else {
+        
+        getHumanChoice()
     }
 
     return humanSelect;
 }
 
-console.log(getHumanChoice());
+
 
 
 let humanScore = 0;
@@ -85,3 +89,12 @@ function playRound(humanChoice, computerChoice){
     console.log("Your Score: " + humanScore + ", Computer Score: " + computerScore);
     return result;
 }
+
+for (let i=0; i<5; i++){
+
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+
+    playRound(humanSelection, computerSelection);
+}
+
