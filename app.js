@@ -86,6 +86,8 @@ function playRound(humanChoice, computerChoice){
         rockBtn.disabled = true;
         paperBtn.disabled = true;
         scissorsBtn.disabled = true;
+        
+        resultsDiv.style.cssText = "background-color: #4caf50;"
 
         fResults.textContent = "You have won the game🎉😎";
 
@@ -95,7 +97,8 @@ function playRound(humanChoice, computerChoice){
         rockBtn.disabled = true;
         paperBtn.disabled = true;
         scissorsBtn.disabled = true;
-
+        
+        resultsDiv.style.cssText = "background-color: #f44336;"
 
         fResults.textContent = "oh no! You lost the game😭💀";
 
@@ -136,5 +139,6 @@ resetbtn.addEventListener('click', () => {
         scissorsBtn.disabled = false;
         choiceDIv.textContent = "";
         fResults.textContent = "";
+        resultsDiv.style.cssText = "backbackground-color: ''";
 });
 
