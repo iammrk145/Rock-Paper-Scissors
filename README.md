@@ -39,5 +39,4 @@ Copy the code into a file named index.html with a <script> tag, or use a .js fil
 
 Open it in a browser (make sure prompt() works).
 
-Play the game via the browser prompt and console.
-
+Play the game via the browser prompt and console..
